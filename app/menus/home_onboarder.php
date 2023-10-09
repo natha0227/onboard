@@ -107,7 +107,7 @@ location.href='entrada_erronea.php';
                 </ul>
             </li>
                 
-            <li><a href="#" onclick="cargarContenido('hacer_solicitud.php')">Hacer Solicitud</a></li>
+            <li><a href="#" onclick="cargarContenido('solicitud_2.php')">Hacer Solicitud</a></li>
             <li><a href="#" onclick="cargarContenido('mis_solicitudes.php')">Mis Solicitudes</a>
                 <ul class="submenu">
                     <li><a href="#" onclick="cargarContenido('mis_solicitudes_pendientes.php')">Pendientes</a></li>

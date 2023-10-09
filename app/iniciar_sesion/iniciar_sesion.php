@@ -4,6 +4,7 @@ include ("conexion.php");
 
 $mail = $_POST['mail'];
 $contrasena = $_POST['contrasena'];
+
 $sql = "SELECT * FROM usuario WHERE mail='$mail' AND contrasena='$contrasena'";
 $result = mysqli_query($conn,$sql);
 $datos=mysqli_fetch_assoc($result);
@@ -15,7 +16,7 @@ $_SESSION['nombre']=$datos['nombre'];
 $_SESSION['apellido']=$datos['apellido'];
 $_SESSION['id']=$datos['id'];
 $_SESSION['lvel']=$datos['lvel'];
-//echo "level:".$_SESSION['level'];
+echo "level:".$_SESSION['lvel'];
 
 
 if (mysqli_num_rows($result) > 0) {
@@ -47,5 +48,5 @@ if (mysqli_num_rows($result) > 0) {
     echo "Credenciales invalidas";
 }
 
-mysql_close($conn);
+mysqli_close($conn);
 ?>

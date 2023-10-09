@@ -7,10 +7,7 @@
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="css/estilos.css">
   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-  <link href="css/cssboni.css" rel="stylesheet" type="text/css">
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <link href="../css/css.listar.css" rel="stylesheet" type="text/css">
-
+  <link href="../css/cssboni.css" rel="stylesheet" type="text/css"> 
     <!-- Incluye FontAwesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 <title>Agendar Mantenimiento</title>
@@ -41,7 +38,7 @@
             <select class="form-select" aria-label="Default select example" id="categoria" name="categoria">
               <?php
                 // Incluir el archivo de conexión
-                include("iniciar_sesion/conexion.php");
+                include("../iniciar_sesion/conexion.php");
     
                 // Consulta SQL para obtener los usuarios
                 $sql = "SELECT id, nombre FROM categoria";
@@ -71,7 +68,7 @@
                 <select class="form-select" aria-label="Default select example" id="metodo" name="metodo">
                 <?php
                     // Incluir el archivo de conexión
-                    include("iniciar_sesion/conexion.php");
+                    include("../iniciar_sesion/conexion.php");
         
                     // Consulta SQL para obtener los usuarios
                     $sql = "SELECT  id, nombre FROM metodo";
