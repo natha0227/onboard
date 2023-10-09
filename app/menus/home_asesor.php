@@ -99,14 +99,7 @@ location.href='entrada_erronea.php';
         <h2>Menú</h2>
         <ul>
             <li><a href="#" onclick="cargarContenido('perfil.php')">Mi Perfil</a></li>
-            <li><a href="#">Mantenimiento</a>
-                <ul class="submenu">
-                    <li><a href="#" onclick="cargarContenido('mantenimiento_hardware.html')">Mantenimiento de Hardware</a></li>
-                    <li><a href="#" onclick="cargarContenido('mantenimiento_software.html')">Mantenimiento de Software</a></li>
-                </ul>
-            </li>
-            <li><a href="#" onclick="cargarContenido('reparacion.html')">Reparación</a></li>
-            <li><a href="#" onclick="cargarContenido('instalacion.html')">Instalación</a></li>
+            <li><a href="#" onclick="cargarContenido('listar_categoria.php')">Categorias</a></li>
             <li><a href="#" onclick="cargarContenido('metodos.html')">Metodos</a></li>
 
             <li><a href="#" onclick="cargarContenido('solicitudes.php')">Solicitudes</a></li>

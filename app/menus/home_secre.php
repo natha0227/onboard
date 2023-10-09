@@ -98,23 +98,11 @@ location.href='entrada_erronea.php';
         <h2>Menú</h2>
         <ul>
             <li><a href="#" onclick="cargarContenido('perfil.php')">Mi Perfil</a></li>
-            <li><a href="#">Mantenimiento</a>
-                <ul class="submenu">
-                    <li><a href="#" onclick="cargarContenido('mantenimiento_hardware.php')">Mantenimiento de Hardware</a></li>
-                    <li><a href="#" onclick="cargarContenido('mantenimiento_software.php')">Mantenimiento de Software</a></li>
-                </ul>
-            </li>
-            <li><a href="#" onclick="cargarContenido('reparacion.php')">Reparación</a></li>
-                <li><a href="#" onclick="cargarContenido('instalacion.php')">Instalación</a></li>
-                <li><a href="#" onclick="cargarContenido('metodos.php')">Métodos</a></li>
+            <li><a href="#" onclick="cargarContenido('listar_categoria.php')">Categorias</a></li>
+            <li><a href="#" onclick="cargarContenido('metodos.php')">Métodos</a></li>
 
             <li><a href="#" onclick="cargarContenido('listar_usuarios.php')">Usuarios</a></li>
-            <li><a href="#" onclick="cargarContenido('solicitudes.php')">Solicitudes</a>
-                <ul class="submenu">
-                    <li><a href="#" onclick="cargarContenido('solicitudes_pendientes.php')">Pendientes</a></li>
-                    <li><a href="#" onclick="cargarContenido('solicitudes_aceptadas.php')">Aceptadas</a></li>
-                </ul>
-            </li>
+            <li><a href="#" onclick="cargarContenido('solicitudes.php')">Solicitudes</a></li>
         </ul>
     </div>
 
