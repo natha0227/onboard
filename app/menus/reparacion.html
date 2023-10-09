@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Categorías</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        /* Cambiamos la disposición a vertical usando flex-direction */
+        .categorias-container {
+            display: flex;
+            flex-direction: column; /* Cambiamos a columna */
+            align-items: center;
+        }
+
+        .categoria {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            text-align: left; /* Centramos el texto horizontalmente */
+        }
+
+        .categoria h2 {
+            font-weight: bold;
+        }
+
+        .descripcion {
+            color: #555;
+        }
+
+        .boton {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none; /* Quitamos el subrayado del enlace */
+        }
+
+        .boton:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="categoria">
+        <h2>¿Que es la reparacion de un equipo?</h2>
+        <p class="descripcion">Realiza acciones programadas para prevenir errores futuros en el software.</p>
+    </div>
+
+</body>
+</html>

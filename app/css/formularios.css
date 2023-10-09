@@ -1,0 +1,106 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5; /* Fondo gris muy claro */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #333; /* Letra en negro */
+}
+
+/* Contenedor principal */
+.login-container {
+    text-align: center; /* Centra horizontalmente */
+}
+
+/* Contenedor del formulario */
+.login-box {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Etiquetas del formulario */
+.login-box label {
+    display: block;
+    font-size: 16px;
+    color: #555; /* Letra en negro */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Campos de entrada del formulario */
+.login-box input[type="text"],
+.login-box input[type="email"],
+.login-box input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.8); /* Espacios para rellenar en blanco transparente */
+    color: #333; /* Letra en negro */
+}
+
+.login-box input[type="text"]::placeholder,
+.login-box input[type="email"]::placeholder,
+.login-box input[type="password"]::placeholder {
+    color: #333; /* Letra en negro */
+}
+
+/* Estilos para el botón */
+.login-box input[type="submit"] {
+    background-color: #00bcd4; /* Botón en azul aciano */
+    color: #fff; /* Letra en blanco */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.login-box input[type="submit"]:hover {
+    background-color: #0097a7; /* Color de hover ligeramente más oscuro */
+}
+
+.login-box input[type="submit"]:before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background-image: radial-gradient(#00bcd4 5%, transparent 10%);
+    transform: rotate(30deg);
+    pointer-events: none;
+    z-index: -1;
+    animation: sparkle 1.5s infinite linear;
+}
+
+@keyframes sparkle {
+    0% {
+        transform: rotate(30deg) translateX(-150%);
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(30deg) translateX(150%);
+        opacity: 0;
+    }
+}

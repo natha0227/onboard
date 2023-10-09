@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head> 
+  <meta charset="utf-8">
+  <title>Login</title>
+  <link rel="stylesheet" type="text/css" href="../css/formularios.css">
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-box">
+      <h2>Login</h2>
+      <form action="../iniciar_sesion/iniciar_sesion.php" method="post">
+        <label for="mail">Email:</label>
+        <input type="email" id="mail" name="mail" required>
+      
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" id="contrasena" name="contrasena" required>
+      
+        <input type="submit" value="Iniciar sesion">
+        <p align="center">olvido su contrasena?       <a href="../iniciar_sesion/recuperar_contrasena.html">    recuperar</a></p>
+        <p align="center">desea crear un usuario? <a href="../iniciar_sesion/crear_cuenta.html">   crear cuenta</a></p>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

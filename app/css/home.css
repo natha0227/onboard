@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+}
+
+.sidebar {
+    height: 100vh;
+    width: 250px;
+    background-color: #333;
+    padding-top: 20px;
+    color: white;
+}
+
+.sidebar a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #555;
+}
+
+.content {
+    padding: 16px;
+    flex: 1;
+}
+
+.submenu {
+    padding-left: 20px;
+}
+
+.submenu a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #808080;
+    display: block;
+    transition: 0.3s;
+}
+
+.submenu a:hover {
+    background-color: #555;
+}
+
+.iframe-container {
+    height: calc(100% - 20px); /* Ajustar el tamaño del iframe según el contenido restante */
+}
+
+iframe {
+    width: 100%;
+    height: 88%;
+    border: none;
+}
+
+.sidebar h2 {
+text-align: center;
+margin-bottom: none; /* Puedes ajustar este margen según tus preferencias */
+}
+
+footer {
+    background-color: #fff;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

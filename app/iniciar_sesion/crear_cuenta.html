@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head> 
+  <meta charset="utf-8">
+  <title>Crear Cuenta</title>
+  <link rel="stylesheet" type="text/css" href="../css/formularios.css">
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-box">
+      <h2>Crear cuenta<h2>
+      <form action="../iniciar_sesion/crear_cuenta.php" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input name="nombre" type="text" required class="container" id="nombre">
+        <label for="apellido">Apellido:</label>
+        <input name="apellido" type="text" required class="container" id="apellido">
+        <label for="nickname">nickname:</label>
+        <input name="nickname" type="text" required class="container" id="nickname">
+        <label for="mail">Email:</label>
+        <input name="mail" type="email" required class="container" id="mail">
+        <label for="contrasena">Contrasena:</label>
+        <input name="contrasena" type="password" required class="container" id="contrasena">
+        <input type="submit" value="Crear Cuenta">
+
+      </form>
+    </div>
+  </div>
+</body>
+</html>
