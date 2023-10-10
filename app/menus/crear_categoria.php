@@ -17,10 +17,10 @@
                 
                     <div class="input-group" >
                         <label class="label active" for="categoria">Categoría de la solicitud:</label>
-                        <input type="text"  id="nombre" name="nombre" placeholder="" value="">
+                        <input type="text"  id="nombre" name="nombre" placeholder="" value="" required="required">
                     </div>
                     <div class="input-group">
-                        <input type="text"  id="descripcion" name="descripcion" placeholder="Descripción" value="">
+                        <input type="text"  id="descripcion" name="descripcion" placeholder="Descripción" value="" required="required">
                         <label class="label active" for="descripcion">Descripción:</label>
                     </div>
 
