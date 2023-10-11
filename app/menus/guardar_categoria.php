@@ -5,7 +5,7 @@ $nombre=$_POST['nombre'];
 $descripcion=$_POST['descripcion'];
 
 
-$sql_insertar="INSERT INTO `categoria` (`nombre`, `descripcion`)VALUES ('$nombre', '$descripcion')";
+$sql_insertar="INSERT INTO `servicio` (`nombre`, `descripcion`)VALUES ('$nombre', '$descripcion')";
 $guardardatos=mysqli_query($conn,$sql_insertar);
 
 
