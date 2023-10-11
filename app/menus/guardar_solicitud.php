@@ -10,7 +10,7 @@ $email = $_POST['mail'];
 $metodo = $_POST['metodo'];
 
 
-$sql_insertar = "INSERT INTO `solicitud` (`id`, `f_p`, `id_usuario`, `email`, `servicio`, `detalles`, `metodo`, `estado_solicitud`) VALUES (NULL, '$f_p', '$id_usuario', '$email', '$servicio', '$detalles', '$metodo', '1')";
+$sql_insertar = "INSERT INTO `solicitud` (`id`, `f_p`, `id`, `email`, `servicio`, `detalles`, `metodo`, `estado_solicitud`) VALUES (NULL, '$f_p', '$id_usuario', '$email', '$servicio', '$detalles', '$metodo', '1')";
 
 $guardardatos = mysqli_query($conn, $sql_insertar);
 

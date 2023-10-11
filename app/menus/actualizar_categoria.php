@@ -8,7 +8,7 @@ if (isset($_POST['editar'])) {
     $descripcion = $_POST['descripcion'];
     
     // Consulta SQL para actualizar los datos
-    $sql_actualizar = "UPDATE `categoria` SET
+    $sql_actualizar = "UPDATE `servicio` SET
         `nombre` = '$nombre',
         `descripcion` = '$descripcion'
         WHERE `id` = $id";
