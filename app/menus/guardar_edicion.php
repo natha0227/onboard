@@ -24,6 +24,6 @@ if ($conn->query($sql) === TRUE) {
 } else {
     echo "Error al actualizar el registro: " . $conn->error;
 }
-
+$_SESSION['nickname']=$nickname;
 $conn->close();
 ?>
