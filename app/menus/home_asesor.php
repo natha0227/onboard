@@ -100,8 +100,6 @@ location.href='entrada_erronea.php';
         <ul>
             <li><a href="#" onclick="cargarContenido('perfil.php')">Mi Perfil</a></li>
             <li><a href="#" onclick="cargarContenido('listar_categoria.php')">Categorias</a></li>
-            <li><a href="#" onclick="cargarContenido('metodos.html')">Metodos</a></li>
-
             <li><a href="#" onclick="cargarContenido('solicitudes.php')">Solicitudes</a></li>
             <li><a href="#" onclick="cargarContenido('mis_asesorias.php')">Mis Asesorias</a></li>
         </ul>
