@@ -25,18 +25,17 @@
                     </div>
 
                     <input type="submit" id="btn-submit" name="editar" value="Guardar">
-                </div>
-            </form>
-            <a href="listar_categoria.php">  
-                    <input type="submit" id="btn-submit" value="Cancelar" style="background: #303F9F;border-radius: 1px;border: 2px solid #f2f2f2;color: #fff;cursor: pointer;display: inline-block;
+                    <a href="listar_categoria.php" class="boton-enlace" style="background: #303F9F;border-radius: 1px;border: 2px solid #f2f2f2;color: #fff;cursor: pointer;display: inline-block;
                     font-family: 'Roboto';
                     font-size: 16px;
                     padding: 15px;
                     width: 23%;
                     -webkit-transition: all 0.3s ease;
                     -o-transition: all 0.3s ease;
-                    transition: all 0.3s ease;">  
-                    </a>
+                    transition: all 0.3s ease;" >Cancelar</a>
+                </div>
+            </form>
+            
         </div>
     </div>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
