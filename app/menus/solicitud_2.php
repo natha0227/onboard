@@ -35,13 +35,13 @@
         
           </div>
           <div class="input-group" style="padding: 17px;">
-            <select class="form-select" aria-label="Default select example" id="categoria" name="categoria" required="required">
+            <select class="form-select" aria-label="Default select example" id="servicio" name="servicio" required="required">
               <?php
                 // Incluir el archivo de conexión
                 include("../iniciar_sesion/conexion.php");
     
                 // Consulta SQL para obtener los usuarios
-                $sql = "SELECT id, nombre FROM categoria";
+                $sql = "SELECT id, nombre FROM servicio";
                 $result = $conn->query($sql);
     
                 if ($result->num_rows > 0) {
@@ -57,7 +57,7 @@
                 $conn->close();
               ?>
             </select>
-			      <label class="label active" for="categoria">Categoria de la solicitud:</label>
+			      <label class="label active" for="servicio">Categoria de la solicitud:</label>
           </div>
           <div class="input-group">
             <label class="label active" for="detalles">Detalle de la solicitud:</label>

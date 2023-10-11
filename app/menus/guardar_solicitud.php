@@ -4,13 +4,13 @@ include("../iniciar_sesion/conexion.php");
 echo var_dump($_POST);
 $f_p = $_POST['f_p'];
 $id_usuario = $_SESSION['id'];
-$categoria = $_POST['categoria'];
+$servicio = $_POST['servicio'];
 $detalles = $_POST['detalles'];
 $email = $_POST['mail'];
 $metodo = $_POST['metodo'];
 
 
-$sql_insertar = "INSERT INTO `solicitud` (`id`, `f_p`, `id_usuario`, `email`, `categoria`, `detalles`, `metodo`, `estado_solicitud`) VALUES (NULL, '$f_p', '$id_usuario', '$email', '$categoria', '$detalles', '$metodo', '1')";
+$sql_insertar = "INSERT INTO `solicitud` (`id`, `f_p`, `id_usuario`, `email`, `servicio`, `detalles`, `metodo`, `estado_solicitud`) VALUES (NULL, '$f_p', '$id_usuario', '$email', '$servicio', '$detalles', '$metodo', '1')";
 
 $guardardatos = mysqli_query($conn, $sql_insertar);
 
