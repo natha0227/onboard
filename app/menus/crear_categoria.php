@@ -12,11 +12,11 @@
 <body>
     <div class="contenedor-formulario">
        <div class="wrap">
-           <form action="guardar_categoria.php" class="formulario" name="cate" method="post">
+           <form action="guardar_categoria.php" class="formulario" name="servicio" method="post">
                 <div>
                 
                     <div class="input-group" >
-                        <label class="label active" for="categoria">Categoría de la solicitud:</label>
+                        <label class="label active" for="servicio">Categoría de la solicitud:</label>
                         <input type="text"  id="nombre" name="nombre" placeholder="" value="" required="required">
                     </div>
                     <div class="input-group">
