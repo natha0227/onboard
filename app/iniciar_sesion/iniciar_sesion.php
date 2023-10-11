@@ -15,7 +15,6 @@ $_SESSION['nombre']=$datos['nombre'];
 $_SESSION['apellido']=$datos['apellido'];
 $_SESSION['id']=$datos['id'];
 $_SESSION['lvel']=$datos['lvel'];
-echo "level:".$_SESSION['lvel'];
 
 
 if (mysqli_num_rows($result) > 0) {

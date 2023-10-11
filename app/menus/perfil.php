@@ -85,12 +85,11 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
 	die("Conexión fallida: " . $conn->connect_error);
 }
-error_reporting(0);
-$sql = "SELECT * FROM usuario u WHERE u.id= $_SESSION[id]";
+
+$sql = "SELECT usuario.*, lvel.nivel FROM usuario INNER JOIN lvel ON usuario.lvel = lvel.id WHERE usuario.id= $_SESSION[id]";
 
 $result = $conn->query($sql);
 
-error_reporting(0);
         if ($result->num_rows > 0) {
             echo '<div class="profile-container">';
             echo '<h2>Datos del Perfil</h2>';
@@ -102,7 +101,7 @@ error_reporting(0);
                 echo '<tr><th>Nickname</th><td>' . $row["nickname"] . '</td></tr>';
                 echo '<tr><th>Correo Electrónico</th><td>' . $row["mail"] . '</td></tr>';
                 echo '<tr><th>Contraseña</th><td>' . $row["contrasena"] . '</td></tr>';
-                echo '<tr><th>Nivel</th><td>' . $row["level"] . '</td></tr>';
+                echo '<tr><th>Nivel</th><td>' . $row["nivel"] . '</td></tr>';
             }
             echo '</table>';
             echo '<a href="consultar_editar.php" class="edit-button">Editar</a>';

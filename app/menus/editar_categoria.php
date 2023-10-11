@@ -21,7 +21,7 @@
                     <input type="hidden" name="id" value="<?php echo $id; ?>">
                 
                     <div class="input-group" >
-                        <label class="label active" for="categoria">Categoría de la solicitud:</label>
+                        <label class="label active" for="servicio">Categoría de la solicitud:</label>
                         <input type="text"  id="nombre" name="nombre" placeholder="" value="<?php echo $nombre; ?>">
                     </div>
                     <div class="input-group">
@@ -30,18 +30,16 @@
                     </div>
 
                     <input type="submit" id="btn-submit" name="editar" value="Editar">
+                    <a href="listar_categoria.php" class="boton-enlace" style="background: #303F9F;border-radius: 1px;border: 2px solid #f2f2f2;color: #fff;cursor: pointer;display: inline-block;
+                    font-family: 'Roboto';
+                    font-size: 16px;
+                    padding: 15px;
+                    width: 23%;
+                    -webkit-transition: all 0.3s ease;
+                    -o-transition: all 0.3s ease;
+                    transition: all 0.3s ease;" >Cancelar</a>
                 </div>
             </form>
-            <a href="listar_categoria.php">  
-      <input type="submit" id="btn-submit" value="Cancelar" style="background: #303F9F;border-radius: 1px;border: 2px solid #f2f2f2;color: #fff;cursor: pointer;display: inline-block;
-    font-family: 'Roboto';
-    font-size: 16px;
-    padding: 15px;
-    width: 23%;
-    -webkit-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;">  
-     </a>
         </div>
     </div>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
