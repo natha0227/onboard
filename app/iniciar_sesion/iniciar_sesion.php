@@ -1,7 +1,6 @@
 <?php
 session_start();
 include ("conexion.php");
-
 $mail = $_POST['mail'];
 $contrasena = $_POST['contrasena'];
 
