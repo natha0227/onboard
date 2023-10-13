@@ -20,7 +20,9 @@ location.href='entrada_erronea.php';
 <body>
 <div class="sidebar">
 <a href="../iniciar_sesion/cerrar_sesion.php"> 🡸 </a>
+    
         <h2>Menú</h2>
+        <p style="font-size: 16px; text-align: center;">Bienvenida admin <?php echo $_SESSION['nickname']?>. </p> 
         <ul>
         <li><a href="#" onclick="cargarContenido('perfil.php')">Mi Perfil</a></li>
         <li><a href="#" onclick="cargarContenido('listar_categoria.php')">Servicios</a></li>
@@ -31,15 +33,12 @@ location.href='entrada_erronea.php';
             <li><a href="#" onclick="cargarContenido('secretarios.php')">Secretarios</a></li>
         </ul>
         </li>
-            <li><a href="#" onclick="cargarContenido('solicitudes.php')">Solicitudes</a> </li>
+            <li><a href="#" onclick="cargarContenido('listar_solicitud_2.php')">Solicitudes</a> </li>
             <li><a href="#" onclick="cargarContenido('Reporte.php')">Reporte</a></li>
         </ul>
     </div>
     
     <div class="content">
-        <h1>Página Principal</h1>
-        <p>Bienvenida admin <?php echo $_SESSION['nickname']?>. </p> 
-
 
         <div class="iframe-container">
             <iframe id="miIframe" src="" frameborder="0" scrolling="yes" seamless></iframe>
