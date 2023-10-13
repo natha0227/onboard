@@ -66,7 +66,7 @@
           if (isset($_GET['estado_solicitud'])) {
             $estado_solicitud = $_GET['estado_solicitud'];
             include("../iniciar_sesion/conexion.php");
-            $sql_listar = "SELECT solicitud.*, estado_solicitud.id AS 'id_e_s', estado_solicitud.nombre_estado, metodo.nombre FROM `solicitud` INNER JOIN estado_solicitud ON solicitud.estado_solicitud = estado_solicitud.id INNER JOIN metodo ON solicitud.metodo = metodo.id WHERE solicitud.estado_solicitud = $estado_solicitud;";
+            $sql_listar = "SELECT solicitud.*, CONCAT(usuario.nombre, ' ', usuario.apellido) AS nombre_completo, estado_solicitud.id AS 'id_e_s', estado_solicitud.nombre_estado, metodo.nombre FROM solicitud INNER JOIN estado_solicitud ON solicitud.estado_solicitud = estado_solicitud.id INNER JOIN metodo ON solicitud.metodo = metodo.id INNER JOIN usuario ON solicitud.id_usuario = usuario.id WHERE solicitud.estado_solicitud = $estado_solicitud;";
             $ejecutar_sql_listar = mysqli_query($conn, $sql_listar);
 
             if ($ejecutar_sql_listar->num_rows > 0) {
@@ -75,7 +75,7 @@
                 echo '<tr>
                     <td>' . $datos['id'] . '</td>
                     <td>' . $datos['f_p'] . '</td>
-                    <td>' . $datos['id_usuario'] . '</td>
+                    <td>' . $datos['nombre_completo'] . '</td>
                     <td>' . $datos['email'] . '</td>
                     <td>' . $datos['servicio'] . '</td>
                     <td>' . $datos['detalles'] . '</td>

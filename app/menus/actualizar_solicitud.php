@@ -1,5 +1,5 @@
 <?php
-include("conexion.php");
+include("../iniciar_sesion/conexion.php");
 //echo var_dump($_POST);
 if (isset($_POST['editar'])) {
     // Obtener los datos del formulario
