@@ -44,9 +44,17 @@ if (mysqli_num_rows($result) > 0) {
             exit;
             break;            
     }
-
+} else if (mysqli_num_rows($result) = '0') {
+    echo '<script type="text/javascript">';
+    echo 'alert("Este usuario ya tiene una sesión iniciada");';
+    echo 'window.location.href = "index.html";';
+    echo '</script>';
+exit;
 } else {
-    echo "session iniciada o credenciales";
+    echo '<script type="text/javascript">';
+    echo 'alert("Credenciales invalidas");';
+    echo 'window.location.href = "index.html";';
+    echo '</script>';
 }
 
 mysqli_close($conn);
