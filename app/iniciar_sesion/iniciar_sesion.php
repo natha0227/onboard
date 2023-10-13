@@ -4,7 +4,7 @@ include ("conexion.php");
 $mail = $_POST['mail'];
 $contrasena = $_POST['contrasena'];
 
-$sql = "SELECT * FROM usuario WHERE mail='$mail' AND contrasena='$contrasena'";
+$sql = "SELECT * FROM usuario WHERE mail='$mail' AND contrasena ='$contrasena' AND estado=0";
 $result = mysqli_query($conn,$sql);
 $datos=mysqli_fetch_assoc($result);
 
@@ -16,34 +16,36 @@ $_SESSION['apellido']=$datos['apellido'];
 $_SESSION['id']=$datos['id'];
 $_SESSION['lvel']=$datos['lvel'];
 
+$subir = "UPDATE usuario SET estado = 1 WHERE id = $_SESSION[id]";
+$subido = mysqli_query($conn,$subir);
 
 if (mysqli_num_rows($result) > 0) {
-    
     switch ($_SESSION['lvel']) {
-        case 0:
-            echo "Inicio de sesion exitoso! ";
+        case 1:
+            echo'<script type="text/javascript">
+            alert("inicio de sesion exitoso!");
+            </script>';
             header("Location: ../menus/home_onboarder.php");
             exit;
             break;
-        case 1:
-            echo "Inicio de sesion exitoso!";
+        case 2:
+            echo'<script type="text/javascript">
+            alert("inicio de sesion exitoso!");
+            </script>';
             header("Location: ../menus/home_asesor.php");
             exit;
             break;
-        case 2:
-            echo "Inicio de sesion exitoso!";
-            header("Location: ../menus/home_secre.php");
-            exit;
-            break;
         case 3:
-            echo "Inicio de sesion exitoso!";
+            echo'<script type="text/javascript">
+            alert("inicio de sesion exitoso!");
+            </script>';
             header("Location: ../menus/home_admin.php");
             exit;
             break;            
     }
 
 } else {
-    echo "Credenciales invalidas";
+    echo "session iniciada o credenciales";
 }
 
 mysqli_close($conn);

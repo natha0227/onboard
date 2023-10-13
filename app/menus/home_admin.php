@@ -19,7 +19,7 @@ location.href='entrada_erronea.php';
 </head>
 <body>
 <div class="sidebar">
-<a href="/onboard/app/iniciar_sesion/cerrar_sesion.php"> 🡸 </a>
+<a href="../iniciar_sesion/cerrar_sesion.php"> 🡸 </a>
         <h2>Menú</h2>
         <ul>
         <li><a href="#" onclick="cargarContenido('perfil.php')">Mi Perfil</a></li>
