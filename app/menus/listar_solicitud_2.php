@@ -85,7 +85,7 @@
                     </td>
                     <td><a href="borrar_solicitud.php?id=' . $datos["id"] . '" class="btn btn-danger">
                     <i class="fas fa-trash"></i> Eliminar</a></td>
-                    <td><a href="../editar_solicitud.php?id=' . $datos["id"] . '" class="btn btn-warning">
+                    <td><a href="editar_solicitud.php?id=' . $datos["id"] . '" class="btn btn-warning">
                     <i class="fas fa-edit"></i> Editar</a></td>
                     </tr>';
               }

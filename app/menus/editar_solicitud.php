@@ -3,7 +3,7 @@
 <head>
   <!-- ... Tus etiquetas meta, enlaces a CSS y otros encabezados ... -->
   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-  <link href="css/cssboni.css" rel="stylesheet" type="text/css">
+  <link href="../css/cssboni.css" rel="stylesheet" type="text/css">
   <title>Formulario de Edición</title>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
  
@@ -29,8 +29,8 @@
           </div>
           
           <div class="input-group">
-            <label class="label active" for="remitente">Nombre del remitente:</label>
-            <input type="text" id="remitente" name="remitente" class="form_input" placeholder="  " value="<?php echo $remitente; ?>">
+            <label class="label active" for="id_usuario">Nombre del remitente:</label>
+            <input type="text" id="id_usuario" name="id_usuario" class="form_input" placeholder="  " value="<?php echo $remitente; ?>">
           </div>
           
           <div class="input-group">
