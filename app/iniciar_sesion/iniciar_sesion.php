@@ -1,7 +1,7 @@
 <?php
 session_start();
 include ("conexion.php");
-
+error_reporting(0);
 $mail = $_POST['mail'];
 $contrasena = $_POST['contrasena'];
 
@@ -17,10 +17,9 @@ $_SESSION['apellido']=$datos['apellido'];
 $_SESSION['id']=$datos['id'];
 $_SESSION['lvel']=$datos['lvel'];
 
-$subir = "UPDATE usuario SET estado = 1 WHERE id = $_SESSION[id]";
-$subido = mysqli_query($conn,$subir);
-
 if (mysqli_num_rows($result) > 0) {
+    $subir = "UPDATE usuario SET estado = 1 WHERE id = $_SESSION[id]";
+    $subido = mysqli_query($conn,$subir);
     switch ($_SESSION['lvel']) {
         case 1:
             echo'<script type="text/javascript">
@@ -44,9 +43,15 @@ if (mysqli_num_rows($result) > 0) {
             exit;
             break;            
     }
-} else if (mysqli_num_rows($result) = '0') {
+} else if (mysqli_num_rows($result) == '0') {
+    $cons = "SELECT * FROM usuario WHERE mail='$mail' AND contrasena ='$contrasena'";
+    $result = mysqli_query($conn,$cons);
+    $datos=mysqli_fetch_assoc($result);
+    $id=$datos['id'];
+    $cerrar = "UPDATE usuario SET estado = 0 WHERE id = $id";
+    $cerrado = mysqli_query($conn,$cerrar);
     echo '<script type="text/javascript">';
-    echo 'alert("Este usuario ya tiene una sesión iniciada");';
+    echo 'alert("Este usuario ya tiene una sesión iniciada o sus Credenciales son invalidas");';
     echo 'window.location.href = "index.html";';
     echo '</script>';
 exit;
@@ -56,6 +61,5 @@ exit;
     echo 'window.location.href = "index.html";';
     echo '</script>';
 }
-
 mysqli_close($conn);
 ?>
