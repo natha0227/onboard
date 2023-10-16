@@ -97,6 +97,7 @@ location.href='entrada_erronea.php';
     <a href="../iniciar_sesion/cerrar_sesion.php"> 🡸 </a>
        
     <h2>Menú</h2>
+    <p style="font-size: 16px; text-align: center;">Bienvenida admin <?php echo $_SESSION['nickname']?>. </p> 
         <ul>
             <li><a href="#" onclick="cargarContenido('perfil.php')">Mi Perfil</a></li>
 
@@ -118,9 +119,6 @@ location.href='entrada_erronea.php';
     </div>
 
     <div class="content">
-        <h1>Página Principal</h1>
-        <p>Bienvenid@ onboarder <?php echo $_SESSION['nickname']?>. </p>
-        
         <!-- Contenedor del iframe que ocupará el espacio restante -->
         <div class="iframe-container">
             <iframe id="miIframe" src="" frameborder="0"></iframe>

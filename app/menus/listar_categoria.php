@@ -25,7 +25,7 @@
             <tbody>
                 <?php
                 include("../iniciar_sesion/conexion.php");
-                $sql_listar = "select * from categoria";
+                $sql_listar = "select * from servicio";
                 $ejecutar_sql_listar = mysqli_query($conn, $sql_listar);
 
                 while ($datos = mysqli_fetch_array($ejecutar_sql_listar)) {

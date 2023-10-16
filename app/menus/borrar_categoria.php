@@ -8,8 +8,8 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
     // Verificar si se ha confirmado la eliminación
     if (isset($_GET['opcion']) && $_GET['opcion'] === 'borrar') {
         // Ejecutar la consulta para eliminar el registro
-       $sql1 ="SELECT id fROM solicitud WHERE categoria = $id";
-       $sql2 = "DELETE FROM categoria WHERE id = $id";
+       $sql1 ="SELECT id fROM solicitud WHERE servicio = $id";
+       $sql2 = "DELETE FROM servicio WHERE id = $id";
        $ejecutar_sql1 = mysqli_query($conn,$sql1);
        $total_categorias = $ejecutar_sql1->num_rows;
        if($total_categorias == 0){

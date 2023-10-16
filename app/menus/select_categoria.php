@@ -6,7 +6,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
     $id = $_GET['id'];
 
     // Consulta SQL para obtener los datos de la categoría por su ID
-    $sql = "SELECT * FROM categoria WHERE id = $id";
+    $sql = "SELECT * FROM servicio WHERE id = $id";
     $resultado = mysqli_query($conn, $sql);
 
     if ($resultado) {

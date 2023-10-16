@@ -17,7 +17,7 @@
   
   <div class="contenedor-formulario">
     <div class="wrap">
-      <form action="guardar_solicitud.php" class="formulario" name="formu" method="post">
+      <form action="guardar_solicitud.php" class="formulario" name="formu" method="post" required="required">
         <div>
           <div class="input-group">
             <label class="label active" for="f_p">Fecha de solicitud:</label>
@@ -31,17 +31,17 @@
           </div>
           <div class="input-group">
             <label class="label active" for="mail">Correo:</label>
-            <input type="email" id="mail" name="mail" placeholder="email@gmail.com" >
+            <input type="email" id="mail" name="mail" placeholder="email@gmail.com" required="required">
         
           </div>
           <div class="input-group" style="padding: 17px;">
-            <select class="form-select" aria-label="Default select example" id="categoria" name="categoria">
+            <select class="form-select" aria-label="Default select example" id="servicio" name="servicio" required="required">
               <?php
                 // Incluir el archivo de conexión
                 include("../iniciar_sesion/conexion.php");
     
                 // Consulta SQL para obtener los usuarios
-                $sql = "SELECT id, nombre FROM categoria";
+                $sql = "SELECT id, nombre FROM servicio";
                 $result = $conn->query($sql);
     
                 if ($result->num_rows > 0) {
@@ -57,15 +57,15 @@
                 $conn->close();
               ?>
             </select>
-			      <label class="label active" for="categoria">Categoria de la solicitud:</label>
+			      <label class="label active" for="servicio">Categoria de la solicitud:</label>
           </div>
           <div class="input-group">
             <label class="label active" for="detalles">Detalle de la solicitud:</label>
-            <input type="text" id="detalles" name="detalles"  placeholder="  ">
+            <input type="text" id="detalles" name="detalles"  placeholder="  " required="required">
 
           </div>
           <div class="input-group" style="padding: 17px;">
-                <select class="form-select" aria-label="Default select example" id="metodo" name="metodo">
+                <select class="form-select" aria-label="Default select example" id="metodo" name="metodo" required="required">
                 <?php
                     // Incluir el archivo de conexión
                     include("../iniciar_sesion/conexion.php");

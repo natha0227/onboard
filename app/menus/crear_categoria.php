@@ -12,31 +12,30 @@
 <body>
     <div class="contenedor-formulario">
        <div class="wrap">
-           <form action="guardar_categoria.php" class="formulario" name="cate" method="post">
+           <form action="guardar_categoria.php" class="formulario" name="servicio" method="post">
                 <div>
                 
                     <div class="input-group" >
-                        <label class="label active" for="categoria">Categoría de la solicitud:</label>
-                        <input type="text"  id="nombre" name="nombre" placeholder="" value="">
+                        <label class="label active" for="servicio">Categoría de la solicitud:</label>
+                        <input type="text"  id="nombre" name="nombre" placeholder="" value="" required="required">
                     </div>
                     <div class="input-group">
-                        <input type="text"  id="descripcion" name="descripcion" placeholder="Descripción" value="">
+                        <input type="text"  id="descripcion" name="descripcion" placeholder="Descripción" value="" required="required">
                         <label class="label active" for="descripcion">Descripción:</label>
                     </div>
 
                     <input type="submit" id="btn-submit" name="editar" value="Guardar">
-                </div>
-            </form>
-            <a href="listar_categoria.php">  
-                    <input type="submit" id="btn-submit" value="Cancelar" style="background: #303F9F;border-radius: 1px;border: 2px solid #f2f2f2;color: #fff;cursor: pointer;display: inline-block;
+                    <a href="listar_categoria.php" class="boton-enlace" style="background: #303F9F;border-radius: 1px;border: 2px solid #f2f2f2;color: #fff;cursor: pointer;display: inline-block;
                     font-family: 'Roboto';
                     font-size: 16px;
                     padding: 15px;
                     width: 23%;
                     -webkit-transition: all 0.3s ease;
                     -o-transition: all 0.3s ease;
-                    transition: all 0.3s ease;">  
-                    </a>
+                    transition: all 0.3s ease;" >Cancelar</a>
+                </div>
+            </form>
+            
         </div>
     </div>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

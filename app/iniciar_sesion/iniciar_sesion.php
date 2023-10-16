@@ -1,7 +1,10 @@
 <?php
 session_start();
 include ("conexion.php");
+<<<<<<< HEAD
 error_reporting(0);
+=======
+>>>>>>> 132b51384738e71c8d503c17b7a6fd839ab92621
 $mail = $_POST['mail'];
 $contrasena = $_POST['contrasena'];
 
