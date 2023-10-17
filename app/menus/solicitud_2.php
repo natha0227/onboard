@@ -90,6 +90,14 @@
 			      <label class="label active" for="metodo">Metodo:</label>
           </div>
           <input type="submit" id="btn-submit" value="Enviar">
+          <a href="borrar_solicitud.php" class="boton-enlace" style="background: #303F9F;border-radius: 1px;border: 2px solid #f2f2f2;color: #fff;cursor: pointer;display: inline-block;
+            font-family: 'Roboto';
+            font-size: 16px;
+            padding: 15px;
+            width: 23%;
+            -webkit-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;" >Cancelar</a>
         </div>
       </form>
     </div>
