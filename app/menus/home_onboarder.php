@@ -72,7 +72,7 @@ location.href='entrada_erronea.php';
 
         iframe {
             width: 100%;
-            height: 88%;
+            height: 100%;
             border: none;
         }
 
@@ -97,22 +97,15 @@ location.href='entrada_erronea.php';
     <a href="../iniciar_sesion/cerrar_sesion.php"> 🡸 </a>
        
     <h2>Menú</h2>
-    <p style="font-size: 16px; text-align: center;">Bienvenida admin <?php echo $_SESSION['nickname']?>. </p> 
+    <p style="font-size: 16px; text-align: center;">Bienvenid@ <?php echo $_SESSION['nickname']?>. </p> 
         <ul>
             <li><a href="#" onclick="cargarContenido('perfil.php')">Mi Perfil</a></li>
-
-            <li><a href="#" onclick="cargarContenido('mantenimiento.html')">Mantenimiento de Hardware</a>
-                <ul class="submenu">
-                    <li><a href="#" onclick="cargarContenido('hardware.html')">Mantenimiento de Hardware</a></li>
-                    <li><a href="#" onclick="cargarContenido('software.html')">Mantenimiento de Software</a></li>
-                </ul>
-            </li>
-                
+            <li><a href="#" onclick="cargarContenido('explicacion.html')">¿Como funciona la solicitud?</a></li>
             <li><a href="#" onclick="cargarContenido('solicitud_2.php')">Hacer Solicitud</a></li>
             <li><a href="#" onclick="cargarContenido('mis_solicitudes.php')">Mis Solicitudes</a>
                 <ul class="submenu">
-                    <li><a href="#" onclick="cargarContenido('mis_solicitudes_pendientes.php')">Pendientes</a></li>
-                    <li><a href="#" onclick="cargarContenido('mis_solicitudes_aceptadas.php')">Aceptadas</a></li>
+                    <li><a href="#" onclick="cargarContenido('pendientes_onboarder.php')">Pendientes</a></li>
+                    <li><a href="#" onclick="cargarContenido('aceptadas_onboarder.php')">Aceptadas</a></li>
                 </ul>
             </li>
         </ul>
